@@ -22,15 +22,16 @@ static const char *terminal[] = { "alacritty", NULL };
  * grey1 - used in an inactive background
  * grey2 - used in inactive text
  */
-static const int cyan[4]  = { 0,   85,  119, 255 };
-static const int grey1[4] = { 34,  34,  34,  255 };
-static const int grey2[4] = { 187, 187, 187, 255 };
-static const int grey3[4] = { 238, 238, 238, 255 };
+static const int cyan[4]     = { 0,   85,  119, 255 };
+static const int magenta[4]  = { 117, 80,  123, 255 };
+static const int grey1[4]    = { 34,  34,  34,  255 };
+static const int grey2[4]    = { 187, 187, 187, 255 };
+static const int grey3[4]    = { 238, 238, 238, 255 };
 
 static const int *schemes[3][2] = {
     /* Scheme Type       fg,    bg */
     [InActive_Scheme] = {grey2, grey1},
-    [Active_Scheme]   = {grey3, cyan},
+    [Active_Scheme]   = {grey3, magenta},
     [Urgent_Scheme]   = {grey1, grey3},
 };
 
